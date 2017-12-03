@@ -1,5 +1,5 @@
 FROM tomcat:8-jre8
-LABEL MAINTAINER Cyrille Nofficial<cynoffic@cyrilix.fr>
+LABEL MAINTAINER jbbodart@yahoo.com
 
 ENV SUBSONIC_VERSION 6.1.3
 
@@ -20,7 +20,6 @@ RUN     apt-get update &&\
 ADD server.xml /usr/local/tomcat/conf/
 ENV JAVA_OPTS="-Dsubsonic.contextPath=/ -Dsubsonic.home=/opt/data -Dsubsonic.defaultMusicFolder=/opt/music/ -Dsubsonic.defaultPodcastFolder=/opt/podcast/ -Dsubsonic.defaultPlaylistFolder=/opt/playlist/"
 
-VOLUME /opt/data
 VOLUME /opt/music/
 VOLUME /opt/playlist/
 VOLUME /opt/podcast/
