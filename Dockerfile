@@ -1,7 +1,7 @@
 FROM tomcat:8-jre8
 LABEL MAINTAINER jbbodart@yahoo.com
 
-ENV SUBSONIC_VERSION 6.1.3
+ENV SUBSONIC_VERSION 6.1.5
 
 LABEL version="$SUBSONIC_VERSION"
 LABEL description="Subsonic media streamer"
